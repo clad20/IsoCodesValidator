@@ -4,6 +4,10 @@
 
 This version need now Symfony 2.7 LTS as a minimum requirement.
 
+## Silex requirement
+
+This version need now Silex 2.0 as a minimum requirement.
+
 ## Deprecations
 
 All deprecated code introduced on 1.x are removed on 2.0.
