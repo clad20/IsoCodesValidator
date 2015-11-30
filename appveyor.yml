@@ -12,6 +12,7 @@ matrix:
   fast_finish: true
 
 install:
+  - echo @php %%~dp0composer.phar %%* > composer.bat
   - appveyor DownloadFile https://getcomposer.org/composer.phar
   - cd c:\projects\IsoCodesValidator
   - composer update --prefer-dist --no-interaction
