@@ -11,6 +11,9 @@ matrix:
 
 clone_folder: c:\projects\IsoCodesValidator
 
+init:
+    - SET PATH=c:\tools\php;%PATH%
+
 install:
   - cinst php
   - echo @php %%~dp0composer.phar %%* > composer.bat
