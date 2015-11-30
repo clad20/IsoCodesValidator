@@ -1,3 +1,7 @@
+version: 1.x.{build}-{branch}
+
+shallow_clone: true
+
 platform:
   - x86
   - x64
