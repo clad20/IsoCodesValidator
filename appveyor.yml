@@ -16,6 +16,7 @@ init:
 
 install:
   - cinst php
+  - cd c:\tools\php
   - echo @php %%~dp0composer.phar %%* > composer.bat
   - appveyor DownloadFile https://getcomposer.org/composer.phar
   - cd c:\projects\IsoCodesValidator
