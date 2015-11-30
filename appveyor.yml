@@ -6,7 +6,13 @@ platform:
   - x86
   - x64
 
+clone_folder: c:\projects\IsoCodesValidator
+
 matrix:
   fast_finish: true
+
+install:
+  - cd c:\projects\IsoCodesValidator
+  - composer update --prefer-dist --no-interaction
 
 test_script: make test
