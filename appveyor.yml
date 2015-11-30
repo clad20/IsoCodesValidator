@@ -1,4 +1,4 @@
-version: 1.x.{build}-{branch}
+version: 1.x.{build}
 
 shallow_clone: true
 
