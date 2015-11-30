@@ -12,7 +12,7 @@ matrix:
 clone_folder: c:\projects\IsoCodesValidator
 
 init:
-    - SET PATH=c:\tools\php;%PATH%
+  - SET PATH=c:\tools\php;%PATH%
 
 install:
   - cinst php
