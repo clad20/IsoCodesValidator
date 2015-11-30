@@ -1,0 +1,8 @@
+platform:
+  - x86
+  - x64
+
+matrix:
+  fast_finish: true
+
+test_script: make test
