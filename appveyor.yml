@@ -13,6 +13,7 @@ clone_folder: c:\projects\IsoCodesValidator
 
 init:
   - SET PATH=c:\tools\php;%PATH%
+  - SET PHP=1
 
 install:
   - cinst php
