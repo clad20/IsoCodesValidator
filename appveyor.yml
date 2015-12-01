@@ -18,8 +18,8 @@ init:
 install:
   - cinst php
   - cd c:\tools\php
-  - echo @php %%~dp0composer.phar %%* > composer.bat
-  - appveyor DownloadFile https://getcomposer.org/composer.phar
+  - php -r "readfile('http://getcomposer.org/installer');" | php
+  - echo @php "%~dp0composer.phar" %* > composer.bat
   - cd c:\projects\IsoCodesValidator
   - composer global update --prefer-dist --no-interaction
   - composer update --prefer-dist --no-interaction
