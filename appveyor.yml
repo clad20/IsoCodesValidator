@@ -6,18 +6,22 @@ platform:
   - x86
   - x64
 
-#matrix:
-#  fast_finish: true
+matrix:
+  fast_finish: true
 
 clone_folder: c:\projects\IsoCodesValidator
 
 init:
   - SET PATH=c:\tools\php;%PATH%
-  - SET PHP=1
 
 install:
+  - cinst OpenSSL.Light
   - cinst php
   - cd c:\tools\php
+  - copy php.ini-production php.ini
+  - echo date.timezone="UTC" >> php.ini
+  - echo extension_dir=ext >> php.ini
+  - echo extension=php_openssl.dll >> php.ini
   - php -r "readfile('http://getcomposer.org/installer');" | php
   - echo @php "%~dp0composer.phar" %* > composer.bat
   - cd c:\projects\IsoCodesValidator
